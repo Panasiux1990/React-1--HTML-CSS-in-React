@@ -1,0 +1,115 @@
+nav {
+  height: 50px;
+  background-color: #4e4e4e;
+}
+
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.moja-firma {
+  font-weight: bold;
+  width: 30%;
+}
+
+.moja-firma a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.menu-list {
+  display: none;
+  list-style: none;
+  position: absolute;
+  width: 40%;
+  height: auto;
+  background: lightgray;
+  top: 50px;
+  transition: .5s;
+  right: 0;
+  text-align: center;
+}
+
+.menu-list a {
+  padding: 5px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  border-bottom: 1px solid #EAEAEB;
+  margin: 0;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ .menu {
+  display: block;
+}
+
+label #sign-one,
+label #sign-two {
+  font-size: 30px;
+  float: right;
+  display: none;
+  color: #ffffff;
+}
+
+label #sign-one {
+  display: block;
+}
+
+#toggle:checked ~ label #sign-one {
+  display: none;
+}
+
+#toggle:checked ~ label #sign-two {
+  display: block;
+}
+
+@media (min-width: 768px) {
+
+  .container-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+  }
+
+  .menu-list {
+      position: initial;
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      justify-content: space-between;
+      text-align: center;
+      background: transparent;
+  }
+
+  .menu-list a {
+      color: white;
+      border-bottom: none;
+  }
+
+  label {
+      display: none;
+  }
+
+  #toggle {
+      display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .contact {
+      cursor: not-allowed;
+  }
+}

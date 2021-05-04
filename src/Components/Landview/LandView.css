@@ -1,0 +1,76 @@
+.tlo-las {
+    height: calc(100vh - 50px);
+    background-image: url(https://langero.com/wp-content/uploads/2019/08/forest-547363_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 18px;
+}
+
+.tlo-las h1 {
+    font-size: 30px;
+}
+
+.tlo-las-cien {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(20, 13, 13, 0.3);
+}
+
+.tlo-las-cien > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: normal;
+}
+
+.container-text {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+@media (min-width: 425px) {
+    .tlo-las-text {
+        width: 80%;
+    }
+}
+
+.btn-oferta {
+    padding: 2% 10%;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    text-align-last: center;
+}
+
+.btn-oferta {
+    text-decoration: none;
+    text-align: justify;
+}
+
+.btn-oferta:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition-duration: 1s;
+}
+
+@media (min-width: 768px) {
+    .tlo-las-text {
+        width: 70%;
+    }
+
+    .tlo-las h1 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-text {
+        width: 60%;
+    }
+}
